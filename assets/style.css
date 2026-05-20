@@ -63,46 +63,6 @@ a:visited {
   font-style: italic;
 }
 
-.header-right {
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 6px;
-}
-
-.header-right .date {
-  font-size: 26px;
-  font-weight: bold;
-  font-family: Georgia, serif;
-  color: white;
-  line-height: 1;
-}
-
-.header-search {
-  display: flex;
-  gap: 4px;
-}
-
-.header-search input[type="text"] {
-  padding: 2px 6px;
-  border: 1px solid #003;
-  font-size: 11px;
-  width: 140px;
-}
-
-.header-search button {
-  background: #ffcc00;
-  border: 1px solid #996600;
-  padding: 2px 8px;
-  font-size: 10px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.header-search button:hover {
-  background: #ffdd44;
-}
 
 /* === Navigation Tabs === */
 .nav-tabs {
@@ -135,42 +95,6 @@ a:visited {
   color: white;
 }
 
-/* === Ticker === */
-.ticker {
-  background: #fffff8;
-  padding: 4px 12px;
-  border-bottom: 1px solid #bbb;
-  font-size: 11px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.ticker a {
-  color: #003399;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.ticker span {
-  color: #555;
-}
-
-/* === Ad Banner (decorative, MSN had these) === */
-.ad-banner {
-  background: #ffeeaa;
-  border: 1px solid #cc9;
-  text-align: center;
-  padding: 4px 8px;
-  font-size: 10px;
-  color: #663300;
-}
-
-.ad-banner a {
-  color: #cc3300;
-  font-weight: bold;
-  text-decoration: none;
-}
 
 /* === Main Layout === */
 .main-layout {

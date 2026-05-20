@@ -34,9 +34,7 @@
        (:link :rel "stylesheet" :href ,(base-url "assets/style.css")))
      (:body
        ,(top-banner)
-       ,(search-bar)
        ,(nav-tabs)
-       ,(ticker)
        ,body-content
        ,(site-footer))))
 
@@ -46,17 +44,7 @@
        (:h1 :class "site-title" "SYMBOLIC" (:span :class "title-sep" "_") "NATURE")
        (:p :class "site-tagline" "a tech magazine for the discerning curmudgeon"))))
 
-(defun current-date-string ()
-  (multiple-value-bind (sec min hr day month year)
-      (get-decoded-time)
-    (declare (ignore sec min hr))
-    (format nil "~a ~d"
-            (nth (1- month) '("JANUARY" "FEBRUARY" "MARCH" "APRIL" "MAY" "JUNE"
-                              "JULY" "AUGUST" "SEPTEMBER" "OCTOBER" "NOVEMBER" "DECEMBER"))
-            day)))
 
-(defun search-bar ()
-  nil)
 
 (defun nav-tabs ()
   `(:nav :class "nav-tabs"
@@ -67,12 +55,9 @@
      (:a :href "#" "Culture")
      (:a :href "#" "About")))
 
-(defun ticker ()
-  nil)
-
 (defun site-footer ()
   `(:footer :class "site-footer"
-     (:p "Symbolic Nature &copy; 2025 | "
+     (:p "Symbolic Nature | "
          (:a :href ,(base-url "") "Home")
          " | Built with Common Lisp")))
 

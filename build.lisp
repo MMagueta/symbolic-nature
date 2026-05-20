@@ -43,5 +43,11 @@
             while line do (write-line line out))))
   (format t "  copied: style.css~%"))
 
+;; Write CNAME for GitHub Pages custom domain
+(with-open-file (out (merge-pathnames "CNAME" *output-dir*)
+                     :direction :output :if-exists :supersede)
+  (write-string "symbolicnature.net" out))
+(format t "  wrote: CNAME~%")
+
 (format t "~%Site built successfully!~%")
 (sb-ext:exit)
